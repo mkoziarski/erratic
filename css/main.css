@@ -41,6 +41,15 @@ ul + h2,
     margin-top: 3.25em;
 }
 
+.history-item {
+    font-family: latomedium;
+    color: black;
+}
+
+.history-item a {
+    color: black;
+}
+
 p, ul {
     margin: 1.625em 0;
 }
