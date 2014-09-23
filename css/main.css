@@ -1,0 +1,94 @@
+/* ---------------------------------------------------------------- typo --- */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #f4f4f4;
+    /*background-image: url('grid.png');
+    background-position: 0px -9px;*/
+    color: #1e1e1e;
+    font-size: 1.6em;
+    line-height: 1.625;
+    font-family: latoregular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h1 {
+    color: #3d3d3d;
+    font-size: 1.875em;
+}
+
+h2 {
+    margin: 1.08333em 0;
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1.08333;
+}
+
+p + h2,
+ul + h2,
+.position-box + h2 {
+    margin-top: 2.16667em;
+}
+
+.position-box + .position-box {
+    margin-top: 3.25em;
+}
+
+p, ul {
+    margin: 1.625em 0;
+}
+
+ul {
+    padding-left: 1.0625em;
+}
+
+a {
+    color: #1e1e1e;
+}
+
+
+/* -------------------------------------------------------------- layout --- */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.main-content {
+    margin: 2em auto 4.875em;
+    padding: 0 1em;
+    max-width: 42em;
+}
+
+.dates {
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    .position {
+        position: relative;
+        padding-right: 9em;
+    }
+
+    .dates {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

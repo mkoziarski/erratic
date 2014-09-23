@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% if page.title %}{{ page.title }}{% else %}erratic.io{% endif %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% assign path = page.url | split: '/' %}
+        {% if 'erratic' == path[1] %}
+            {% assign root = '/erratic/' %}
+        {% else %}
+            {% assign root = '/' %}
+        {% endif %}
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="{{ root }}css/fonts.css">
+        <link rel="stylesheet" href="{{ root }}css/normalize.css">
+        <link rel="stylesheet" href="{{ root }}css/main.css">
+        <script src="{{ root }}js/lib/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>
